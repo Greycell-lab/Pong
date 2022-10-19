@@ -35,7 +35,18 @@ namespace Pong
         }
         void gameEngine(object sender, EventArgs e)
         {
-
+            Rect playerHitbox = new Rect(Canvas.GetLeft(player), Canvas.GetTop(player), player.Width, player.Height);
+            Rect enemyHitbox = new Rect(Canvas.GetLeft(enemy), Canvas.GetTop(enemy), enemy.Width, enemy.Height);
+            Rect ballHitbox = new Rect(Canvas.GetLeft(ball), Canvas.GetTop(ball), ball.Width, ball.Height);
+            if (moveLeft && Canvas.GetLeft(player) > 5)
+            {
+                Canvas.SetLeft(player, Canvas.GetLeft(player) - 5);
+            }
+            if (moveRight && Canvas.GetLeft(player) + 100 < Application.Current.MainWindow.Width)
+            {
+                Canvas.SetLeft(player, Canvas.GetLeft(player) + 5);
+            }
+            
         }
 
         private void OnKeyUp(object sender, KeyEventArgs e)
@@ -55,6 +66,10 @@ namespace Pong
             if (e.Key == Key.Left)
             {
                 moveLeft = true;
+            }
+            if (e.Key == Key.Right)
+            {
+                moveRight = true;
             }
         }
     }

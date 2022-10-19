@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="350">
     <Canvas Background="Black" Name ="MyCanvas" KeyUp="OnKeyUp" KeyDown="OnKeyDown" Focusable="True">
-        <Rectangle x:Name="player" Height="10" Canvas.Left="135" Stroke="Black" Fill="White" Canvas.Top="414" Width="80" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Rectangle x:Name="enemy" Height="10" Canvas.Left="135" Stroke="Black" Fill="White" Canvas.Top="10" Width="80" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Rectangle x:Name="ball" Height="10" Width="10" Canvas.Left="165" Canvas.Top="207" Stroke="White" Fill="White" />
+        <Rectangle Name="player" Height="10" Canvas.Left="135" Stroke="Black" Fill="White" Canvas.Top="391" Width="80" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Rectangle Name="enemy" Height="10" Canvas.Left="135" Stroke="Black" Fill="White" Canvas.Top="10" Width="80" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Rectangle Name="ball" Height="10" Width="10" Canvas.Left="165" Canvas.Top="207" Stroke="White" Fill="White" />
     </Canvas>
 </Window>
