@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pong"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="350">
+        Title="MainWindow" Height="470" Width="350">
     <Canvas Background="Black" Name ="MyCanvas" KeyUp="OnKeyUp" KeyDown="OnKeyDown" Focusable="True">
-        <Rectangle Name="player" Height="10" Canvas.Left="135" Stroke="Black" Fill="White" Canvas.Top="391" Width="80" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Rectangle Name="player" Height="10" Canvas.Left="130" Stroke="Black" Fill="White" Canvas.Top="394" Width="80" HorizontalAlignment="Left" VerticalAlignment="Top" />
         <Rectangle Name="enemy" Height="10" Canvas.Left="135" Stroke="Black" Fill="White" Canvas.Top="10" Width="80" HorizontalAlignment="Center" VerticalAlignment="Top" />
-        <Rectangle Name="ball" Height="10" Width="10" Canvas.Left="165" Canvas.Top="207" Stroke="White" Fill="White" />
-        <Label Name="enemyScore"  Foreground="White" Canvas.Left="29" HorizontalAlignment="Center" Canvas.Top="137" VerticalAlignment="Top"/>
-        <Label Name="playerScore"  Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="261" Canvas.Left="29"/>
+        <Rectangle Name="ball" Height="10" Width="10" Canvas.Left="165" Canvas.Top="207" Stroke="White" Fill="White" RadiusX="4.5" RadiusY="4.5" />
+        <Label Content="0" Name="enemyScore"  Foreground="White" Canvas.Left="29" HorizontalAlignment="Center" Canvas.Top="137" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="0" Name="playerScore"  Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="261" Canvas.Left="29" FontSize="24"/>
+        <Rectangle Name="Hitbox"  Height="14"  Canvas.Top="404" Width="330" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="10"/>
     </Canvas>
 </Window>
